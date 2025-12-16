@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_Recive_Water_Fountain_From_Rework</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Emergency_Stop_Release" Datatype="Bool" />
+    <Member Name="Start" Datatype="Bool" />
+    <Member Name="Sensor_Water_Fountain_Before_Entrace_Functional_Test_Spinner_Conveyor_Belt" Datatype="Bool" />
+    <Member Name="Sensor_Water_Fountain_Entrace_Functional_Test_Spinner_Conveyor_Belt" Datatype="Bool" />
+    <Member Name="Sensor_Spinner_Entrace_Functional_Test_Position_Withdrawn" Datatype="Bool" />
+    <Member Name="Sensor_Spinner_Entrace_Functional_Test_Position_Advanced" Datatype="Bool" />
+    <Member Name="Sensor_Water_Fountain_Entrace_Functional_Test_After_Spinner_Conveyor_Belt" Datatype="Bool" />
+    <Member Name="Sensor_Water_Fountain_Geting_Exit_Rework_Conveyor_Belt" Datatype="Bool" />
+    <Member Name="Button_Water_Fountain_Get_Exit_Rework_Conveyor_Belt" Datatype="Bool" />
+    <Member Name="Trigger_Read_Serial_Number_Entrace_Functional_Test" Datatype="Bool" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="Turn_On_Conveyor_Belt_Motor_Spinner_Get_Entrace_Function_Test" Datatype="Bool" />
+    <Member Name="Valve_Advance_Spinner_Entrace_Functional_Test" Datatype="Bool" />
+    <Member Name="Signal_Pre_Functional_Test_Production_Line" Datatype="Bool" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="Aux_Trig_0" Datatype="Bool" />
+    <Member Name="Aux_Trig_1" Datatype="Bool" />
+    <Member Name="Aux_Trig_2" Datatype="Bool" />
+    <Member Name="Aux_Trig_3" Datatype="Bool" />
+    <Member Name="Aux_Trig_4" Datatype="Bool" />
+    <Member Name="Aux_Trig_5" Datatype="Bool" />
+    <Member Name="Aux_Trig_6" Datatype="Bool" />
+    <Member Name="Aux_Trig_7" Datatype="Bool" />
+    <Member Name="Aux_Trig_8" Datatype="Bool" />
+    <Member Name="Aux_Trig_9" Datatype="Bool" />
+    <Member Name="Button_Rework_Pressed" Datatype="Bool" />
+    <Member Name="Counter" Datatype="USInt" />
+    <Member Name="Timer_Delay_Turn_On_Motor_Spinner_Conveyor_Belt" Datatype="TON_TIME" Version="1.0" />
+    <Member Name="Counter_Water_Fountain_Entrace_Functional_Test" Datatype="CTUD_USINT" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Delay_Spin_Advanced" Datatype="TON_TIME" Version="1.0" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Delay_Spin_Withdrawn" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>Instance_FB_Recive_Water_Fountain_From_Rework_DB</Name>
+      <Namespace />
+      <Number>105</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

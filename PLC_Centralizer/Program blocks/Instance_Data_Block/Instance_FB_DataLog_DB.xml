@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_DataLog</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="DataLogCreate_REQ" Datatype="Bool" />
+    <Member Name="DataLogOpen_REQ" Datatype="Bool" />
+    <Member Name="DataLogWrite_REQ" Datatype="Bool" />
+    <Member Name="DataLogClose_REQ" Datatype="Bool" />
+    <Member Name="DataLogClear_REQ" Datatype="Bool" />
+    <Member Name="DataLogDelete_REQ" Datatype="Bool" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="DataLogCreate_DONE" Datatype="Bool" />
+    <Member Name="DataLogCreate_BUSY" Datatype="Bool" />
+    <Member Name="DataLogCreate_ERROR" Datatype="Bool" />
+    <Member Name="DataLogCreate_STATUS" Datatype="Word" />
+    <Member Name="DataLogOpen_DONE" Datatype="Bool" />
+    <Member Name="DataLogOpen_BUSY" Datatype="Bool" />
+    <Member Name="DataLogOpen_ERROR" Datatype="Bool" />
+    <Member Name="DataLogOpen_STATUS" Datatype="Word" />
+    <Member Name="DataLogWrite_DONE" Datatype="Bool" />
+    <Member Name="DataLogWrite_BUSY" Datatype="Bool" />
+    <Member Name="DataLogWrite_ERROR" Datatype="Bool" />
+    <Member Name="DataLogWrite_STATUS" Datatype="Word" />
+    <Member Name="DataLogClose_DONE" Datatype="Bool" />
+    <Member Name="DataLogClose_BUSY" Datatype="Bool" />
+    <Member Name="DataLogClose_ERROR" Datatype="Bool" />
+    <Member Name="DataLogClose_STATUS" Datatype="Word" />
+    <Member Name="DataLogClear_DONE" Datatype="Bool" />
+    <Member Name="DataLogClear_BUSY" Datatype="Bool" />
+    <Member Name="DataLogClear_ERROR" Datatype="Bool" />
+    <Member Name="DataLogClear_STATUS" Datatype="Word" />
+    <Member Name="DataLogDelete_DONE" Datatype="Bool" />
+    <Member Name="DataLogDelete_BUSY" Datatype="Bool" />
+    <Member Name="DataLogDelete_ERROR" Datatype="Bool" />
+    <Member Name="DataLogDelete_STATUS" Datatype="Word" />
+  </Section>
+  <Section Name="InOut">
+    <Member Name="ID" Datatype="DWord" />
+    <Member Name="NAME" Datatype="Variant" />
+    <Member Name="DataLogCreate_HEADER" Datatype="Variant" />
+    <Member Name="DATA" Datatype="Variant" />
+  </Section>
+  <Section Name="Static">
+    <Member Name="Enable_DataLogOpen" Datatype="Bool" />
+    <Member Name="Enable_DataLogWrite" Datatype="Bool" />
+    <Member Name="Axiliar_P_Trig_0" Datatype="Bool" />
+    <Member Name="Axiliar_P_Trig_1" Datatype="Bool" />
+    <Member Name="Axiliar_P_Trig_2" Datatype="Bool" />
+    <Member Name="Axiliar_P_Trig_3" Datatype="Bool" />
+    <Member Name="Axiliar_P_Trig_4" Datatype="Bool" />
+    <Member Name="Axiliar_P_Trig_5" Datatype="Bool" />
+    <Member Name="Axiliar_P_Trig_6" Datatype="Bool" />
+    <Member Name="Axiliar_P_Trig_7" Datatype="Bool" />
+    <Member Name="Axiliar_P_Trig_8" Datatype="Bool" />
+    <Member Name="DataLogCreate_Instance" Datatype="DataLogCreate" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="DataLogOpen_Instance" Datatype="DataLogOpen" Version="1.1">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="DataLogWrite_Instance" Datatype="DataLogWrite" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="DataLogClose_Instance" Datatype="DataLogClose" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="DataLogClear_Instance" Datatype="DataLogClear" Version="1.1">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="DataLogDelete_Instance" Datatype="DataLogDelete" Version="1.1">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>Instance_FB_DataLog_DB</Name>
+      <Namespace />
+      <Number>110</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

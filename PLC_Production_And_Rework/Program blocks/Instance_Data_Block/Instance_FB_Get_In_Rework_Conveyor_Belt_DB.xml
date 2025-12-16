@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_Get_In_Rework_Conveyor_Belt</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Emergency_Stop_Release" Datatype="Bool" />
+    <Member Name="Start" Datatype="Bool" />
+    <Member Name="Sensor_Water_Fountain_Exit_Functional_Test_Spinner_Conveyor_Belt" Datatype="Bool" />
+    <Member Name="Sensor_Spinner_Exit_Functional_Test_Position_Withdrawn" Datatype="Bool" />
+    <Member Name="Sensor_Spinner_Exit_Functional_Test_Position_Advanced" Datatype="Bool" />
+    <Member Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Start" Datatype="Bool" />
+    <Member Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Finish" Datatype="Bool" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Exit_Funcional_Test" Datatype="Bool" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static" />
+</Sections></Interface>
+      <Name>Instance_FB_Get_In_Rework_Conveyor_Belt_DB</Name>
+      <Namespace />
+      <Number>110</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

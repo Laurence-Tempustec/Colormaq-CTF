@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_IO_Device_Functional_Test_Rework</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Reset_PLC_Functional_Test_Rework" Datatype="Bool" />
+    <Member Name="Status" Datatype="Bool" />
+    <Member Name="Voltage_Read" Datatype="UInt" />
+    <Member Name="Min_Electrical_Current" Datatype="UInt" />
+    <Member Name="Max_Electrical_Current" Datatype="UInt" />
+    <Member Name="Time_End_Electrical_Current_Test" Datatype="Time" />
+    <Member Name="Time_Start_Visual_Test" Datatype="Time" />
+    <Member Name="In_Functional_Test_Rework" Datatype="&quot;IO_Device_Functinal_Test_Rework&quot;" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="Out_Test_Parameters_Rework" Datatype="&quot;IO_Device_Test_Parameters_Rework&quot;" />
+    <Member Name="Comunication_Error_Panel_Rework" Datatype="Bool" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="Timer_Alarme_A_1" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_1" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>Instance_FB_IO_Device_Functional_Test_Rework_DB</Name>
+      <Namespace />
+      <Number>112</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

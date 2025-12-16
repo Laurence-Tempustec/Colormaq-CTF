@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_IO_Device_Functional_Test</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Reset_PLC_Functional_Test" Datatype="Array[0..31] of Bool" />
+    <Member Name="Status" Datatype="Bool" />
+    <Member Name="Voltage_Read" Datatype="UInt" />
+    <Member Name="Min_Electrical_Current" Datatype="UInt" />
+    <Member Name="Max_Electrical_Current" Datatype="UInt" />
+    <Member Name="Time_End_Electrical_Current_Test" Datatype="Time" />
+    <Member Name="Time_Start_Visual_Test" Datatype="Time" />
+    <Member Name="In_Functional_Test_Odd" Datatype="&quot;IO_Device_Functinal_Test_Odd&quot;" />
+    <Member Name="In_Functional_Test_Even" Datatype="&quot;IO_Device_Functinal_Test_Even&quot;" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="Out_Test_Parameters_Odd" Datatype="&quot;IO_Device_Test_Parameters_Odd&quot;" />
+    <Member Name="Out_Test_Parameters_Even" Datatype="&quot;IO_Device_Test_Parameters_Even&quot;" />
+    <Member Name="Out_Voltage_Read" Datatype="UInt" />
+    <Member Name="Comunication_Error_Panel_1" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_2" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_3" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_4" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_5" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_6" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_7" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_8" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_9" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_10" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_11" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_12" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_13" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_14" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_15" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_16" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_17" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_18" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_19" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_20" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_21" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_22" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_23" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_24" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_25" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_26" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_27" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_28" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_29" Datatype="Bool" />
+    <Member Name="Comunication_Error_Panel_30" Datatype="Bool" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="Enable_Comunication_Erro_3" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_4" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_5" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_6" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_7" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_8" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_9" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_10" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_11" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_12" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_13" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_14" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_15" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_16" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_17" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_18" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_19" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_20" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_21" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_22" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_23" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_24" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_25" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_26" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_27" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_28" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_29" Datatype="Bool" />
+    <Member Name="Enable_Comunication_Erro_30" Datatype="Bool" />
+    <Member Name="Timer_Alarme_A_1" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_1" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_2" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_2" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_3" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_3" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_4" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_4" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_5" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_5" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_6" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_6" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_7" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_7" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_8" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_8" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_9" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_9" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_10" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_10" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_11" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_11" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_12" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_12" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_13" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_13" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_14" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_14" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_15" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_15" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_16" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_16" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_17" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_17" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_18" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_18" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_19" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_19" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_20" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_20" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_21" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_21" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_22" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_22" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_23" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_23" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_24" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_24" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_25" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_25" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_26" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_26" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_27" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_27" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_28" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_28" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_29" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_29" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_A_30" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_30" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>Instance_FB_IO_Device_Functional_Test_DB</Name>
+      <Namespace />
+      <Number>104</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

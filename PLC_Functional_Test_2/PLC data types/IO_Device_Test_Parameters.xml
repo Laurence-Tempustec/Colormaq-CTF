@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Reset_PLC_Functional_Test_2" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_4" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_6" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_8" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_10" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_12" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_14" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_16" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_18" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_20" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_22" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_24" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_26" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_28" Datatype="Bool" />
+    <Member Name="Reset_PLC_Functional_Test_30" Datatype="Bool" />
+    <Member Name="Status" Datatype="Bool" />
+    <Member Name="Voltage_Read" Datatype="UInt" />
+    <Member Name="Min_Electrical_Current" Datatype="UInt" />
+    <Member Name="Max_Electrical_Current" Datatype="UInt" />
+    <Member Name="Time_End_Electrical_Current_Test" Datatype="Time" />
+    <Member Name="Time_Start_Visual_Test" Datatype="Time" />
+  </Section>
+</Sections></Interface>
+      <Name>IO_Device_Test_Parameters</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

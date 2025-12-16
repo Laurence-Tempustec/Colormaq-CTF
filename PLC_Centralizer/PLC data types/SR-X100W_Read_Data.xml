@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="sr-x_100_Read_Data_1" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_2" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_3" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_4" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_5" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_6" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_7" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_8" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_9" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_10" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_11" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_12" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_13" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_14" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_15" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_16" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_17" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_18" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_19" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_20" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_21" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_22" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_23" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_24" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_25" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_26" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_27" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_28" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_29" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_30" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_31" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_32" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_33" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_34" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_35" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_36" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_37" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_38" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_39" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_40" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_41" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_42" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_43" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_44" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_45" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_46" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_47" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_48" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_49" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_50" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_51" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_52" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_53" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_54" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_55" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_56" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_57" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_58" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_59" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_60" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_61" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_62" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_63" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_64" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_65" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_66" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_67" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_68" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_69" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_70" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_71" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_72" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_73" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_74" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_75" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_76" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_77" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_78" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_79" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_80" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_81" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_82" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_83" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_84" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_85" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_86" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_87" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_88" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_89" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_90" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_91" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_92" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_93" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_94" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_95" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_96" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_97" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_98" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_99" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_100" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_101" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_102" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_103" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_104" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_105" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_106" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_107" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_108" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_109" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_110" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_111" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_112" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_113" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_114" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_115" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_116" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_117" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_118" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_119" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_120" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_121" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_122" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_123" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_124" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_125" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_126" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_127" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_128" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_129" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_130" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_131" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_132" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_133" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_134" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_135" Datatype="Char" />
+    <Member Name="sr-x_100_Read_Data_136" Datatype="Char" />
+  </Section>
+</Sections></Interface>
+      <Name>SR-X100W_Read_Data</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

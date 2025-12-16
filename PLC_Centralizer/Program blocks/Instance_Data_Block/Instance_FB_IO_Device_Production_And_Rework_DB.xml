@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_IO_Device_Production_And_Rework</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Start" Datatype="Bool" />
+    <Member Name="Manual_Turn_On_Motor_Caroussel" Datatype="Bool" />
+    <Member Name="Manual_Turn_On_Motor_Conveyor_Belt" Datatype="Bool" />
+    <Member Name="Water_Foutain_Fail_Functional_Test" Datatype="Bool" />
+    <Member Name="Select_Motor_Speed" Datatype="SInt" />
+    <Member Name="Carousel_Voltage_Selection" Datatype="SInt" />
+    <Member Name="In_PLC_Production_And_Rework" Datatype="&quot;IO_Device_Conveyor_Belt_Input&quot;" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="Comunication_Error" Datatype="Bool" />
+    <Member Name="Emergency_Stop_Release" Datatype="Bool" />
+    <Member Name="Trigger_Read_Serial_Number_Entrace_Functional_Test" Datatype="Bool" />
+    <Member Name="Trigger_Read_Serial_Number_Exit_Functional_Test" Datatype="Bool" />
+    <Member Name="Selected_Voltage_220V" Datatype="Bool" />
+    <Member Name="Selected_Voltage_127V" Datatype="Bool" />
+    <Member Name="Carousel_Frequency_Inverter_Fail" Datatype="Bool" />
+    <Member Name="Conveyor_Belt_Functional_Test_Inverter_Fail" Datatype="Bool" />
+    <Member Name="Out_PLC_Production_And_Rework" Datatype="&quot;IO_Device_Conveyor_Belt_Ouput&quot;" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="Timer_Alarme_A_1" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Alarme_B_1" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>Instance_FB_IO_Device_Production_And_Rework_DB</Name>
+      <Namespace />
+      <Number>105</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

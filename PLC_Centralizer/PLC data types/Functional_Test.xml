@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Water_Fountain" Datatype="String" />
+    <Member Name="Serial_Number" Datatype="String[17]" />
+    <Member Name="Panel_Number" Datatype="SInt" />
+    <Member Name="Read_Electrical_Voltage" Datatype="UInt" />
+    <Member Name="Read_Electrical_Current" Datatype="UInt" />
+    <Member Name="Electrical_Current_Test" Datatype="String[10]" />
+    <Member Name="Visual_Test" Datatype="String[10]" />
+    <Member Name="Functional_Test" Datatype="String[10]" />
+  </Section>
+</Sections></Interface>
+      <Name>Functional_Test</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

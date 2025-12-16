@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Life_Trigger_PLC_Functional_Test_2" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_2" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_2" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_2" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_2" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_2" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_4" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_4" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_4" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_4" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_4" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_4" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_6" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_6" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_6" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_6" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_6" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_6" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_8" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_8" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_8" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_8" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_8" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_8" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_10" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_10" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_10" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_10" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_10" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_10" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_12" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_12" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_12" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_12" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_12" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_12" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_14" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_14" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_14" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_14" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_14" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_14" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_16" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_16" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_16" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_16" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_16" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_16" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_18" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_18" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_18" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_18" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_18" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_18" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_20" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_20" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_20" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_20" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_20" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_20" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_22" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_22" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_22" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_22" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_22" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_22" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_24" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_24" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_24" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_24" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_24" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_24" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_26" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_26" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_26" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_26" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_26" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_26" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_28" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_28" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_28" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_28" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_28" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_28" Datatype="UInt" />
+    <Member Name="Life_Trigger_PLC_Functional_Test_30" Datatype="Bool" />
+    <Member Name="Star_Test_PLC_Functional_Test_30" Datatype="Bool" />
+    <Member Name="Button_PLC_Functional_Test_30" Datatype="Bool" />
+    <Member Name="Electrical_Current_Test_Approved_PLC_Functional_Test_30" Datatype="Bool" />
+    <Member Name="Visual_Test_Approved_PLC_Functional_Test_30" Datatype="Bool" />
+    <Member Name="Electrical_Current_Read_PLC_Functional_Test_30" Datatype="UInt" />
+  </Section>
+</Sections></Interface>
+      <Name>IO_Device_Functinal_Test</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

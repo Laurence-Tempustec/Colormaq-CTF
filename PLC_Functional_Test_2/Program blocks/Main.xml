@@ -1,0 +1,1082 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.OB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Initial_Call" Datatype="Bool" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Initial call of this OB</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Remanence" Datatype="Bool" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">=True, if remanent data are available</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant">
+    <Member Name="Test_Station" Datatype="SInt">
+      <StartValue>2</StartValue>
+    </Member>
+    <Member Name="Total_Number_Test_Stations" Datatype="SInt">
+      <StartValue>25</StartValue>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>Main</Name>
+      <Namespace />
+      <Number>1</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SecondaryType>ProgramCycle</SecondaryType>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Button_Start_Approve" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Digital_Input_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Digital_Input_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Digital_Input_3" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Digital_Input_4" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Digital_Input_5" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="DB_Digital_Inputs" />
+        <Component Name="Button_Start_Approve" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB_Digital_Inputs" />
+        <Component Name="Digital_Input_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="DB_Digital_Inputs" />
+        <Component Name="Digital_Input_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="DB_Digital_Inputs" />
+        <Component Name="Digital_Input_3" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="DB_Digital_Inputs" />
+        <Component Name="Digital_Input_4" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="DB_Digital_Inputs" />
+        <Component Name="Digital_Input_5" />
+      </Symbol>
+    </Access>
+    <Call UId="33">
+      <CallInfo Name="FB_Digital_Inputs" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="34">
+          <Component Name="Instance_FB_Digital_Inputs_DB" />
+        </Instance>
+        <Parameter Name="I_Button_Start_Approve" Section="Input" Type="Bool" />
+        <Parameter Name="I_Digital_Input_1" Section="Input" Type="Bool" />
+        <Parameter Name="I_Digital_Input_2" Section="Input" Type="Bool" />
+        <Parameter Name="I_Digital_Input_3" Section="Input" Type="Bool" />
+        <Parameter Name="I_Digital_Input_4" Section="Input" Type="Bool" />
+        <Parameter Name="I_Digital_Input_5" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Button_Start_Approve" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_1" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_2" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_3" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_4" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_5" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="35">
+      <Powerrail />
+      <NameCon UId="33" Name="en" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="21" />
+      <NameCon UId="33" Name="I_Button_Start_Approve" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="22" />
+      <NameCon UId="33" Name="I_Digital_Input_1" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="23" />
+      <NameCon UId="33" Name="I_Digital_Input_2" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="24" />
+      <NameCon UId="33" Name="I_Digital_Input_3" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="25" />
+      <NameCon UId="33" Name="I_Digital_Input_4" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="I_Digital_Input_5" />
+    </Wire>
+    <Wire UId="42">
+      <NameCon UId="33" Name="DB_Button_Start_Approve" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="33" Name="DB_Digital_Input_1" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="44">
+      <NameCon UId="33" Name="DB_Digital_Input_2" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="33" Name="DB_Digital_Input_3" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="33" Name="DB_Digital_Input_4" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="33" Name="DB_Digital_Input_5" />
+      <IdentCon UId="32" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Digital Inputs</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Current_Transducer" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Voltage_Transducer" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>27648</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>27648</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>5000.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="29">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="30">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>250.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="DB_Analogic_Inputs" />
+        <Component Name="Electrical_Current_Read_Real" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="DB_Analogic_Inputs" />
+        <Component Name="Electrical_Voltage_Read_Real" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="DB_Analogic_Inputs" />
+        <Component Name="Electrical_Current_Read_UInt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="DB_Analogic_Inputs" />
+        <Component Name="Electrical_Voltage_Read_UInt" />
+      </Symbol>
+    </Access>
+    <Call UId="35">
+      <CallInfo Name="FB_Analogic_Input" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="36">
+          <Component Name="Instance_FB_Analogic_Input_DB" />
+        </Instance>
+        <Parameter Name="Analogic_Input_0" Section="Input" Type="Int" />
+        <Parameter Name="Analogic_Input_1" Section="Input" Type="Int" />
+        <Parameter Name="Min_NormX_AI_0" Section="Input" Type="Int" />
+        <Parameter Name="Max_NormX_AI_0" Section="Input" Type="Int" />
+        <Parameter Name="Min_NormX_AI_1" Section="Input" Type="Int" />
+        <Parameter Name="Max_NormX_AI_1" Section="Input" Type="Int" />
+        <Parameter Name="Scale_Min_AI_0" Section="Input" Type="Real" />
+        <Parameter Name="Scale_Max_AI_0" Section="Input" Type="Real" />
+        <Parameter Name="Scale_Min_AI_1" Section="Input" Type="Real" />
+        <Parameter Name="Scale_Max_AI_1" Section="Input" Type="Real" />
+        <Parameter Name="Value_Real_AI_0" Section="Output" Type="Real" />
+        <Parameter Name="Value_Real_AI_1" Section="Output" Type="Real" />
+        <Parameter Name="Value_UInt_AI_0" Section="Output" Type="UInt" />
+        <Parameter Name="Value_UInt_AI_1" Section="Output" Type="UInt" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="37">
+      <Powerrail />
+      <NameCon UId="35" Name="en" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="35" Name="Analogic_Input_0" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="22" />
+      <NameCon UId="35" Name="Analogic_Input_1" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="23" />
+      <NameCon UId="35" Name="Min_NormX_AI_0" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="24" />
+      <NameCon UId="35" Name="Max_NormX_AI_0" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="25" />
+      <NameCon UId="35" Name="Min_NormX_AI_1" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="26" />
+      <NameCon UId="35" Name="Max_NormX_AI_1" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="27" />
+      <NameCon UId="35" Name="Scale_Min_AI_0" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="28" />
+      <NameCon UId="35" Name="Scale_Max_AI_0" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="29" />
+      <NameCon UId="35" Name="Scale_Min_AI_1" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="30" />
+      <NameCon UId="35" Name="Scale_Max_AI_1" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="35" Name="Value_Real_AI_0" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="35" Name="Value_Real_AI_1" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="35" Name="Value_UInt_AI_0" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="35" Name="Value_UInt_AI_1" />
+      <IdentCon UId="34" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Analogic Inputs</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_Digital_Outputs" />
+        <Component Name="Blink_Button_Light" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_Digital_Outputs" />
+        <Component Name="Turn_On_Button_Light" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Digital_Outputs" />
+        <Component Name="Light_Fail_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_Digital_Outputs" />
+        <Component Name="Light_Approve_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Digital_Outputs" />
+        <Component Name="Digital_Output_3" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Clock_1Hz" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Button_Start_Approve" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Light_Fail_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Light_Approve_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Digital_Output_3" />
+      </Symbol>
+    </Access>
+    <Call UId="31">
+      <CallInfo Name="FB_Digital_Outputs" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="32">
+          <Component Name="Instance_FB_Digital_Outputs_DB" />
+        </Instance>
+        <Parameter Name="DB_Blink_Button_Light" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Turn_On_Button_Light" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Light_Fail_Test" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Light_Approve_Test" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Digital_Output_3" Section="Input" Type="Bool" />
+        <Parameter Name="Clock_1Hz" Section="Input" Type="Bool" />
+        <Parameter Name="Q_Button_Light" Section="Output" Type="Bool" />
+        <Parameter Name="Q_Light_Fail_Test" Section="Output" Type="Bool" />
+        <Parameter Name="Q_Light_Approve_Test" Section="Output" Type="Bool" />
+        <Parameter Name="Q_Digital_Output_3" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="33">
+      <Powerrail />
+      <NameCon UId="31" Name="en" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="21" />
+      <NameCon UId="31" Name="DB_Blink_Button_Light" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="22" />
+      <NameCon UId="31" Name="DB_Turn_On_Button_Light" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="23" />
+      <NameCon UId="31" Name="DB_Light_Fail_Test" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="24" />
+      <NameCon UId="31" Name="DB_Light_Approve_Test" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="25" />
+      <NameCon UId="31" Name="DB_Digital_Output_3" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="26" />
+      <NameCon UId="31" Name="Clock_1Hz" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="31" Name="Q_Button_Light" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="41">
+      <NameCon UId="31" Name="Q_Light_Fail_Test" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="42">
+      <NameCon UId="31" Name="Q_Light_Approve_Test" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="31" Name="Q_Digital_Output_3" />
+      <IdentCon UId="30" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Digital Outputs</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="LocalConstant" UId="21">
+      <Constant Name="Test_Station" />
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Clock_1Hz" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Star_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_Digital_Inputs" />
+        <Component Name="Button_Start_Approve" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Electrical_Current_Test_Approved" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Visual_Test_Approved_PLC" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="DB_Analogic_Inputs" />
+        <Component Name="Electrical_Current_Read_UInt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="In_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="In_Test_Parameters" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Reset_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Out_Test_Parameters" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Out_Functinal_Test" />
+      </Symbol>
+    </Access>
+    <Call UId="33">
+      <CallInfo Name="FB_IO_Device" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="34">
+          <Component Name="Instance_FB_IO_Device_DB" />
+        </Instance>
+        <Parameter Name="Test_Station" Section="Input" Type="SInt" />
+        <Parameter Name="Life_Trigger" Section="Input" Type="Bool" />
+        <Parameter Name="Star_Test" Section="Input" Type="Bool" />
+        <Parameter Name="Button_Start_Approve" Section="Input" Type="Bool" />
+        <Parameter Name="Electrical_Current_Test_Approved" Section="Input" Type="Bool" />
+        <Parameter Name="Visual_Test_Approved" Section="Input" Type="Bool" />
+        <Parameter Name="Electrical_Current_Read" Section="Input" Type="UInt" />
+        <Parameter Name="In_Functional_Test" Section="Input" Type="&quot;IO_Device_Functinal_Test&quot;" />
+        <Parameter Name="In_Test_Parameters" Section="Input" Type="&quot;IO_Device_Test_Parameters&quot;" />
+        <Parameter Name="Reset_Functional_Test" Section="Output" Type="Bool" />
+        <Parameter Name="Out_Test_Parameters" Section="Output" Type="&quot;IO_Device_Test_Parameters&quot;" />
+        <Parameter Name="Out_Functional_Test" Section="Output" Type="&quot;IO_Device_Functinal_Test&quot;" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="35">
+      <Powerrail />
+      <NameCon UId="33" Name="en" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="21" />
+      <NameCon UId="33" Name="Test_Station" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="22" />
+      <NameCon UId="33" Name="Life_Trigger" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="23" />
+      <NameCon UId="33" Name="Star_Test" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="24" />
+      <NameCon UId="33" Name="Button_Start_Approve" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="25" />
+      <NameCon UId="33" Name="Electrical_Current_Test_Approved" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="Visual_Test_Approved" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="27" />
+      <NameCon UId="33" Name="Electrical_Current_Read" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="28" />
+      <NameCon UId="33" Name="In_Functional_Test" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="29" />
+      <NameCon UId="33" Name="In_Test_Parameters" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="33" Name="Reset_Functional_Test" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="33" Name="Out_Test_Parameters" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="33" Name="Out_Functional_Test" />
+      <IdentCon UId="32" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>IO Device</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_Digital_Inputs" />
+        <Component Name="Button_Start_Approve" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Electrical_Current_Test_Approved" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Visual_Test_Approved_PLC" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Reset_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Star_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_Digital_Outputs" />
+        <Component Name="Blink_Button_Light" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="DB_Digital_Outputs" />
+        <Component Name="Turn_On_Button_Light" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB_Digital_Outputs" />
+        <Component Name="Light_Fail_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="DB_Digital_Outputs" />
+        <Component Name="Light_Approve_Test" />
+      </Symbol>
+    </Access>
+    <Call UId="30">
+      <CallInfo Name="FB_Start_Test" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="31">
+          <Component Name="Instance_FB_Start_Test_DB" />
+        </Instance>
+        <Parameter Name="Button_Start_Approve" Section="Input" Type="Bool" />
+        <Parameter Name="Electrical_Current_Test_Approved" Section="Input" Type="Bool" />
+        <Parameter Name="Visual_Test_Approved_PLC" Section="Input" Type="Bool" />
+        <Parameter Name="Reset_Funcional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="Start_Functional_Test" Section="Output" Type="Bool" />
+        <Parameter Name="Blink_Button_Light" Section="Output" Type="Bool" />
+        <Parameter Name="Turn_On_Button_Light" Section="Output" Type="Bool" />
+        <Parameter Name="Light_Fail_Test" Section="Output" Type="Bool" />
+        <Parameter Name="Light_Approve_Test" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="32">
+      <Powerrail />
+      <NameCon UId="30" Name="en" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="Button_Start_Approve" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="22" />
+      <NameCon UId="30" Name="Electrical_Current_Test_Approved" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="23" />
+      <NameCon UId="30" Name="Visual_Test_Approved_PLC" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="24" />
+      <NameCon UId="30" Name="Reset_Funcional_Test" />
+    </Wire>
+    <Wire UId="37">
+      <NameCon UId="30" Name="Start_Functional_Test" />
+      <IdentCon UId="25" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="30" Name="Blink_Button_Light" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="30" Name="Turn_On_Button_Light" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="30" Name="Light_Fail_Test" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="41">
+      <NameCon UId="30" Name="Light_Approve_Test" />
+      <IdentCon UId="29" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Start Functional Test, Reset Functional Test and Lights</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Star_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Reset_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Analogic_Inputs" />
+        <Component Name="Electrical_Current_Read_UInt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="In_Test_Parameters" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Electrical_Current_Test_Approved" />
+      </Symbol>
+    </Access>
+    <Call UId="26">
+      <CallInfo Name="FB_Electrical_Current_Test" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="27">
+          <Component Name="Instance_FB_Electrical_Current_Test_DB" />
+        </Instance>
+        <Parameter Name="Star_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="Reset_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="Electrical_Current_Read_UInt" Section="Input" Type="UInt" />
+        <Parameter Name="In_Test_Parameters" Section="Input" Type="&quot;IO_Device_Test_Parameters&quot;" />
+        <Parameter Name="Electrical_Current_Test_Approved" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="28">
+      <Powerrail />
+      <NameCon UId="26" Name="en" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="21" />
+      <NameCon UId="26" Name="Star_Functional_Test" />
+    </Wire>
+    <Wire UId="30">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="Reset_Functional_Test" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="23" />
+      <NameCon UId="26" Name="Electrical_Current_Read_UInt" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="24" />
+      <NameCon UId="26" Name="In_Test_Parameters" />
+    </Wire>
+    <Wire UId="33">
+      <NameCon UId="26" Name="Electrical_Current_Test_Approved" />
+      <IdentCon UId="25" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Electrical Current Test</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="21" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Star_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Reset_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Digital_Inputs" />
+        <Component Name="Button_Start_Approve" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="In_Test_Parameters" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Test_Water_Foutain" />
+        <Component Name="Visual_Test_Approved_PLC" />
+      </Symbol>
+    </Access>
+    <Call UId="26">
+      <CallInfo Name="FB_Visual_Test" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="27">
+          <Component Name="Instance_FB_Visual_Test_DB" />
+        </Instance>
+        <Parameter Name="Star_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="Reset_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="Button_Start_Approve" Section="Input" Type="Bool" />
+        <Parameter Name="In_Test_Parameters" Section="Input" Type="&quot;IO_Device_Test_Parameters&quot;" />
+        <Parameter Name="Visual_Test_Approved_PLC" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="28">
+      <Powerrail />
+      <NameCon UId="26" Name="en" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="21" />
+      <NameCon UId="26" Name="Star_Functional_Test" />
+    </Wire>
+    <Wire UId="30">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="Reset_Functional_Test" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="23" />
+      <NameCon UId="26" Name="Button_Start_Approve" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="24" />
+      <NameCon UId="26" Name="In_Test_Parameters" />
+    </Wire>
+    <Wire UId="33">
+      <NameCon UId="26" Name="Visual_Test_Approved_PLC" />
+      <IdentCon UId="25" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="22" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Visual Test</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="26" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="27" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>"Main Program Sweep (Cycle)"</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.OB>
+</Document>

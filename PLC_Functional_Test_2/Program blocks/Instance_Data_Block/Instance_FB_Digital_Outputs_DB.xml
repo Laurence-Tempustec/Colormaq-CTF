@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_Digital_Outputs</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="DB_Blink_Button_Light" Datatype="Bool" />
+    <Member Name="DB_Turn_On_Button_Light" Datatype="Bool" />
+    <Member Name="DB_Light_Fail_Test" Datatype="Bool" />
+    <Member Name="DB_Light_Approve_Test" Datatype="Bool" />
+    <Member Name="DB_Digital_Output_3" Datatype="Bool" />
+    <Member Name="Clock_1Hz" Datatype="Bool" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="Q_Button_Light" Datatype="Bool" />
+    <Member Name="Q_Light_Fail_Test" Datatype="Bool" />
+    <Member Name="Q_Light_Approve_Test" Datatype="Bool" />
+    <Member Name="Q_Digital_Output_3" Datatype="Bool" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="Timer_Delay_Fail_Test" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Timer_Delay_Approve_Test" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>Instance_FB_Digital_Outputs_DB</Name>
+      <Namespace />
+      <Number>103</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

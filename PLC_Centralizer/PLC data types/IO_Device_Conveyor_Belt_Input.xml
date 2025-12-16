@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Life_Trigger" Datatype="Bool" />
+    <Member Name="Emergency_Stop_Release" Datatype="Bool" />
+    <Member Name="Trigger_Read_Serial_Number_Entrace_Functional_Test" Datatype="Bool" />
+    <Member Name="Trigger_Read_Serial_Number_Exit_Functional_Test" Datatype="Bool" />
+    <Member Name="Selected_Voltage_220V" Datatype="Bool" />
+    <Member Name="Selected_Voltage_127V" Datatype="Bool" />
+    <Member Name="Carousel_Frequency_Inverter_Fail" Datatype="Bool" />
+    <Member Name="Conveyor_Belt_Functional_Test_Inverter_Fail" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <Name>IO_Device_Conveyor_Belt_Input</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

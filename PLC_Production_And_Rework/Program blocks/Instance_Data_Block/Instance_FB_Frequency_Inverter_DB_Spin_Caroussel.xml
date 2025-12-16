@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_Frequency_Inverter</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Emergency_Stop_Release" Datatype="Bool" />
+    <Member Name="Start" Datatype="Bool" />
+    <Member Name="Manual_Turn_On_Motor" Datatype="Bool" />
+    <Member Name="Pause_Conveyor_Belt_And_Carousel_Functional_Test" Datatype="Bool" />
+    <Member Name="Select_Motor_Speedy" Datatype="SInt" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="Motor_Spining_Speedy_1" Datatype="Bool" />
+    <Member Name="Motor_Spining_Speedy_2" Datatype="Bool" />
+    <Member Name="Motor_Spining_Speedy_3" Datatype="Bool" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static" />
+</Sections></Interface>
+      <Name>Instance_FB_Frequency_Inverter_DB_Spin_Caroussel</Name>
+      <Namespace />
+      <Number>106</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

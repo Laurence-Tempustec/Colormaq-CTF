@@ -1,0 +1,2770 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.OB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Initial_Call" Datatype="Bool" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Initial call of this OB</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Remanence" Datatype="Bool" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">=True, if remanent data are available</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>Main</Name>
+      <Namespace />
+      <Number>1</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SecondaryType>ProgramCycle</SecondaryType>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Emergency_Stop_Release" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Sensor_Water_Fountain_Before_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Sensor_Water_Fountain_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Sensor_Water_Fountain_Entrace_Functional_Test_After_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Trigger_Read_Serial_Number_Entrace_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Sensor_Water_Fountain_Geting_Exit_Rework_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="Button_Water_Fountain_Get_Exit_Rework_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="Trigger_Read_Serial_Number_Exit_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="Sensor_Water_Fountain_Exit_Functional_Test_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="Sensor_Water_Fountain_Exit_Functional_Test_After_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Start" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Finish" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Carousel_Frequency_Inverter_Fail" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="Conveyor_Belt_Functional_Test_Inverter_Fail" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="Selected_Voltage_220V" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Selected_Voltage_127V" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="Sensor_Spinner_Entrace_Functional_Test_Position_Withdrawn" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="Sensor_Spinner_Entrace_Functional_Test_Position_Advanced" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="Sensor_Spinner_Exit_Functional_Test_Position_Withdrawn" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="Sensor_Spinner_Exit_Functional_Test_Position_Advanced" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="41">
+      <Symbol>
+        <Component Name="Digital_Input_20" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="Digital_Input_21" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="Digital_Input_22" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="44">
+      <Symbol>
+        <Component Name="Digital_Input_23" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="45">
+      <Symbol>
+        <Component Name="Digital_Input_24" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="46">
+      <Symbol>
+        <Component Name="Digital_Input_25" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="47">
+      <Symbol>
+        <Component Name="Digital_Input_26" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="48">
+      <Symbol>
+        <Component Name="Digital_Input_27" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="49">
+      <Symbol>
+        <Component Name="Digital_Input_28" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="50">
+      <Symbol>
+        <Component Name="Digital_Input_29" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="51">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Emergency_Stop_Release" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="52">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Before_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="53">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="54">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Entrace_Functional_Test_After_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="55">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Trigger_Read_Serial_Number_Entrace_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="56">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Geting_Exit_Rework_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="57">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Button_Water_Fountain_Get_Exit_Rework_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="58">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Trigger_Read_Serial_Number_Exit_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="59">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Exit_Functional_Test_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="60">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Exit_Functional_Test_After_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="61">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Start" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="62">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Finish" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="63">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Carousel_Frequency_Inverter_Fail" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="64">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Conveyor_Belt_Functional_Test_Inverter_Fail" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="65">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Selected_Voltage_220V" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="66">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Selected_Voltage_127V" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="67">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Spinner_Entrace_Functional_Test_Position_Withdrawn" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="68">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Spinner_Entrace_Functional_Test_Position_Advanced" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="69">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Spinner_Exit_Functional_Test_Position_Withdrawn" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="70">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Spinner_Exit_Functional_Test_Position_Advanced" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="71">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_20" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="72">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_21" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="73">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_22" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="74">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_23" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="75">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_24" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="76">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_25" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="77">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_26" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="78">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_27" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="79">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_28" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="80">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_29" />
+      </Symbol>
+    </Access>
+    <Call UId="81">
+      <CallInfo Name="FB_Digital_Input" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="82">
+          <Component Name="Instance_FB_Digital_Input_DB" />
+        </Instance>
+        <Parameter Name="DI_Emergency_Stop_Release" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Sensor_Water_Fountain_Before_Entrace_Functional_Test_Spinner_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Sensor_Water_Fountain_Entrace_Functional_Test_Spinner_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Sensor_Water_Fountain_Entrace_Functional_Test_After_Spinner_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Trigger_Read_Serial_Number_Entrace_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Sensor_Water_Fountain_Geting_Exit_Rework_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Button_Water_Fountain_Get_Exit_Rework_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Trigger_Read_Serial_Number_Exit_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Sensor_Water_Fountain_Exit_Functional_Test_Spinner_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Sensor_Water_Fountain_Exit_Functional_Test_After_Spinner_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Start" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Finish" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Carousel_Frequency_Inverter_Fail" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Conveyor_Belt_Functional_Test_Inverter_Fail" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Selected_Voltage_220V" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Selected_Voltage_127V" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Sensor_Spinner_Entrace_Functional_Test_Position_Withdrawn" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Sensor_Spinner_Entrace_Functional_Test_Position_Advanced" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Sensor_Spinner_Exit_Functional_Test_Position_Withdrawn" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Sensor_Spinner_Exit_Functional_Test_Position_Advanced" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Digital_Input_20" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Digital_Input_21" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Digital_Input_22" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Digital_Input_23" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Digital_Input_24" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Digital_Input_25" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Digital_Input_26" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Digital_Input_27" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Digital_Input_28" Section="Input" Type="Bool" />
+        <Parameter Name="DI_Digital_Input_29" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Emergency_Stop_Release" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Sensor_Water_Fountain_Before_Entrace_Functional_Test_Spinner_Conveyor_Belt" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Sensor_Water_Fountain_Entrace_Functional_Test_Spinner_Conveyor_Belt" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Sensor_Water_Fountain_Entrace_Functional_Test_After_Spinner_Conveyor_Belt" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Trigger_Read_Serial_Number_Entrace_Functional_Test" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Sensor_Water_Fountain_Geting_Exit_Rework_Conveyor_Belt" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Button_Water_Fountain_Get_Exit_Rework_Conveyor_Belt" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Trigger_Read_Serial_Number_Exit_Functional_Test" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Sensor_Water_Fountain_Exit_Functional_Test_Spinner_Conveyor_Belt" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Sensor_Water_Fountain_Exit_Functional_Test_After_Spinner_Conveyor_Belt" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Start" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Finish" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Carousel_Frequency_Inverter_Fail" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Conveyor_Belt_Functional_Test_Inverter_Fail" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Selected_Voltage_220V" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Selected_Voltage_127V" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Sensor_Spinner_Entrace_Functional_Test_Position_Withdrawn" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Sensor_Spinner_Entrace_Functional_Test_Position_Advanced" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Sensor_Spinner_Exit_Functional_Test_Position_Withdrawn" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Sensor_Spinner_Exit_Functional_Test_Position_Advanced" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_20" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_21" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_22" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_23" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_24" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_25" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_26" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_27" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_28" Section="Output" Type="Bool" />
+        <Parameter Name="DB_Digital_Input_29" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="83">
+      <Powerrail />
+      <NameCon UId="81" Name="en" />
+    </Wire>
+    <Wire UId="84">
+      <IdentCon UId="21" />
+      <NameCon UId="81" Name="DI_Emergency_Stop_Release" />
+    </Wire>
+    <Wire UId="85">
+      <IdentCon UId="22" />
+      <NameCon UId="81" Name="DI_Sensor_Water_Fountain_Before_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="86">
+      <IdentCon UId="23" />
+      <NameCon UId="81" Name="DI_Sensor_Water_Fountain_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="87">
+      <IdentCon UId="24" />
+      <NameCon UId="81" Name="DI_Sensor_Water_Fountain_Entrace_Functional_Test_After_Spinner_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="88">
+      <IdentCon UId="25" />
+      <NameCon UId="81" Name="DI_Trigger_Read_Serial_Number_Entrace_Functional_Test" />
+    </Wire>
+    <Wire UId="89">
+      <IdentCon UId="26" />
+      <NameCon UId="81" Name="DI_Sensor_Water_Fountain_Geting_Exit_Rework_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="90">
+      <IdentCon UId="27" />
+      <NameCon UId="81" Name="DI_Button_Water_Fountain_Get_Exit_Rework_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="91">
+      <IdentCon UId="28" />
+      <NameCon UId="81" Name="DI_Trigger_Read_Serial_Number_Exit_Functional_Test" />
+    </Wire>
+    <Wire UId="92">
+      <IdentCon UId="29" />
+      <NameCon UId="81" Name="DI_Sensor_Water_Fountain_Exit_Functional_Test_Spinner_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="93">
+      <IdentCon UId="30" />
+      <NameCon UId="81" Name="DI_Sensor_Water_Fountain_Exit_Functional_Test_After_Spinner_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="94">
+      <IdentCon UId="31" />
+      <NameCon UId="81" Name="DI_Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Start" />
+    </Wire>
+    <Wire UId="95">
+      <IdentCon UId="32" />
+      <NameCon UId="81" Name="DI_Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Finish" />
+    </Wire>
+    <Wire UId="96">
+      <IdentCon UId="33" />
+      <NameCon UId="81" Name="DI_Carousel_Frequency_Inverter_Fail" />
+    </Wire>
+    <Wire UId="97">
+      <IdentCon UId="34" />
+      <NameCon UId="81" Name="DI_Conveyor_Belt_Functional_Test_Inverter_Fail" />
+    </Wire>
+    <Wire UId="98">
+      <IdentCon UId="35" />
+      <NameCon UId="81" Name="DI_Selected_Voltage_220V" />
+    </Wire>
+    <Wire UId="99">
+      <IdentCon UId="36" />
+      <NameCon UId="81" Name="DI_Selected_Voltage_127V" />
+    </Wire>
+    <Wire UId="100">
+      <IdentCon UId="37" />
+      <NameCon UId="81" Name="DI_Sensor_Spinner_Entrace_Functional_Test_Position_Withdrawn" />
+    </Wire>
+    <Wire UId="101">
+      <IdentCon UId="38" />
+      <NameCon UId="81" Name="DI_Sensor_Spinner_Entrace_Functional_Test_Position_Advanced" />
+    </Wire>
+    <Wire UId="102">
+      <IdentCon UId="39" />
+      <NameCon UId="81" Name="DI_Sensor_Spinner_Exit_Functional_Test_Position_Withdrawn" />
+    </Wire>
+    <Wire UId="103">
+      <IdentCon UId="40" />
+      <NameCon UId="81" Name="DI_Sensor_Spinner_Exit_Functional_Test_Position_Advanced" />
+    </Wire>
+    <Wire UId="104">
+      <IdentCon UId="41" />
+      <NameCon UId="81" Name="DI_Digital_Input_20" />
+    </Wire>
+    <Wire UId="105">
+      <IdentCon UId="42" />
+      <NameCon UId="81" Name="DI_Digital_Input_21" />
+    </Wire>
+    <Wire UId="106">
+      <IdentCon UId="43" />
+      <NameCon UId="81" Name="DI_Digital_Input_22" />
+    </Wire>
+    <Wire UId="107">
+      <IdentCon UId="44" />
+      <NameCon UId="81" Name="DI_Digital_Input_23" />
+    </Wire>
+    <Wire UId="108">
+      <IdentCon UId="45" />
+      <NameCon UId="81" Name="DI_Digital_Input_24" />
+    </Wire>
+    <Wire UId="109">
+      <IdentCon UId="46" />
+      <NameCon UId="81" Name="DI_Digital_Input_25" />
+    </Wire>
+    <Wire UId="110">
+      <IdentCon UId="47" />
+      <NameCon UId="81" Name="DI_Digital_Input_26" />
+    </Wire>
+    <Wire UId="111">
+      <IdentCon UId="48" />
+      <NameCon UId="81" Name="DI_Digital_Input_27" />
+    </Wire>
+    <Wire UId="112">
+      <IdentCon UId="49" />
+      <NameCon UId="81" Name="DI_Digital_Input_28" />
+    </Wire>
+    <Wire UId="113">
+      <IdentCon UId="50" />
+      <NameCon UId="81" Name="DI_Digital_Input_29" />
+    </Wire>
+    <Wire UId="114">
+      <NameCon UId="81" Name="DB_Emergency_Stop_Release" />
+      <IdentCon UId="51" />
+    </Wire>
+    <Wire UId="115">
+      <NameCon UId="81" Name="DB_Sensor_Water_Fountain_Before_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+      <IdentCon UId="52" />
+    </Wire>
+    <Wire UId="116">
+      <NameCon UId="81" Name="DB_Sensor_Water_Fountain_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+      <IdentCon UId="53" />
+    </Wire>
+    <Wire UId="117">
+      <NameCon UId="81" Name="DB_Sensor_Water_Fountain_Entrace_Functional_Test_After_Spinner_Conveyor_Belt" />
+      <IdentCon UId="54" />
+    </Wire>
+    <Wire UId="118">
+      <NameCon UId="81" Name="DB_Trigger_Read_Serial_Number_Entrace_Functional_Test" />
+      <IdentCon UId="55" />
+    </Wire>
+    <Wire UId="119">
+      <NameCon UId="81" Name="DB_Sensor_Water_Fountain_Geting_Exit_Rework_Conveyor_Belt" />
+      <IdentCon UId="56" />
+    </Wire>
+    <Wire UId="120">
+      <NameCon UId="81" Name="DB_Button_Water_Fountain_Get_Exit_Rework_Conveyor_Belt" />
+      <IdentCon UId="57" />
+    </Wire>
+    <Wire UId="121">
+      <NameCon UId="81" Name="DB_Trigger_Read_Serial_Number_Exit_Functional_Test" />
+      <IdentCon UId="58" />
+    </Wire>
+    <Wire UId="122">
+      <NameCon UId="81" Name="DB_Sensor_Water_Fountain_Exit_Functional_Test_Spinner_Conveyor_Belt" />
+      <IdentCon UId="59" />
+    </Wire>
+    <Wire UId="123">
+      <NameCon UId="81" Name="DB_Sensor_Water_Fountain_Exit_Functional_Test_After_Spinner_Conveyor_Belt" />
+      <IdentCon UId="60" />
+    </Wire>
+    <Wire UId="124">
+      <NameCon UId="81" Name="DB_Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Start" />
+      <IdentCon UId="61" />
+    </Wire>
+    <Wire UId="125">
+      <NameCon UId="81" Name="DB_Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Finish" />
+      <IdentCon UId="62" />
+    </Wire>
+    <Wire UId="126">
+      <NameCon UId="81" Name="DB_Carousel_Frequency_Inverter_Fail" />
+      <IdentCon UId="63" />
+    </Wire>
+    <Wire UId="127">
+      <NameCon UId="81" Name="DB_Conveyor_Belt_Functional_Test_Inverter_Fail" />
+      <IdentCon UId="64" />
+    </Wire>
+    <Wire UId="128">
+      <NameCon UId="81" Name="DB_Selected_Voltage_220V" />
+      <IdentCon UId="65" />
+    </Wire>
+    <Wire UId="129">
+      <NameCon UId="81" Name="DB_Selected_Voltage_127V" />
+      <IdentCon UId="66" />
+    </Wire>
+    <Wire UId="130">
+      <NameCon UId="81" Name="DB_Sensor_Spinner_Entrace_Functional_Test_Position_Withdrawn" />
+      <IdentCon UId="67" />
+    </Wire>
+    <Wire UId="131">
+      <NameCon UId="81" Name="DB_Sensor_Spinner_Entrace_Functional_Test_Position_Advanced" />
+      <IdentCon UId="68" />
+    </Wire>
+    <Wire UId="132">
+      <NameCon UId="81" Name="DB_Sensor_Spinner_Exit_Functional_Test_Position_Withdrawn" />
+      <IdentCon UId="69" />
+    </Wire>
+    <Wire UId="133">
+      <NameCon UId="81" Name="DB_Sensor_Spinner_Exit_Functional_Test_Position_Advanced" />
+      <IdentCon UId="70" />
+    </Wire>
+    <Wire UId="134">
+      <NameCon UId="81" Name="DB_Digital_Input_20" />
+      <IdentCon UId="71" />
+    </Wire>
+    <Wire UId="135">
+      <NameCon UId="81" Name="DB_Digital_Input_21" />
+      <IdentCon UId="72" />
+    </Wire>
+    <Wire UId="136">
+      <NameCon UId="81" Name="DB_Digital_Input_22" />
+      <IdentCon UId="73" />
+    </Wire>
+    <Wire UId="137">
+      <NameCon UId="81" Name="DB_Digital_Input_23" />
+      <IdentCon UId="74" />
+    </Wire>
+    <Wire UId="138">
+      <NameCon UId="81" Name="DB_Digital_Input_24" />
+      <IdentCon UId="75" />
+    </Wire>
+    <Wire UId="139">
+      <NameCon UId="81" Name="DB_Digital_Input_25" />
+      <IdentCon UId="76" />
+    </Wire>
+    <Wire UId="140">
+      <NameCon UId="81" Name="DB_Digital_Input_26" />
+      <IdentCon UId="77" />
+    </Wire>
+    <Wire UId="141">
+      <NameCon UId="81" Name="DB_Digital_Input_27" />
+      <IdentCon UId="78" />
+    </Wire>
+    <Wire UId="142">
+      <NameCon UId="81" Name="DB_Digital_Input_28" />
+      <IdentCon UId="79" />
+    </Wire>
+    <Wire UId="143">
+      <NameCon UId="81" Name="DB_Digital_Input_29" />
+      <IdentCon UId="80" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Analogic_Input_0" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Analogic_Input_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>27648</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>27648</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>10.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="29">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="30">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>10.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="DB_Analogic_Input" />
+        <Component Name="Real_Analogic_Input_0" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="DB_Analogic_Input" />
+        <Component Name="Real_Analogic_Input_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="DB_Analogic_Input" />
+        <Component Name="UInt_Analogic_Input_0" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="DB_Analogic_Input" />
+        <Component Name="UInt_Analogic_Input_1" />
+      </Symbol>
+    </Access>
+    <Call UId="35">
+      <CallInfo Name="FB_Analogic_Input" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="36">
+          <Component Name="Instance_FB_Analogic_Input_DB" />
+        </Instance>
+        <Parameter Name="Analogic_Input_0" Section="Input" Type="Int" />
+        <Parameter Name="Analogic_Input_1" Section="Input" Type="Int" />
+        <Parameter Name="Min_NormX_AI_0" Section="Input" Type="Int" />
+        <Parameter Name="Max_NormX_AI_0" Section="Input" Type="Int" />
+        <Parameter Name="Min_NormX_AI_1" Section="Input" Type="Int" />
+        <Parameter Name="Max_NormX_AI_1" Section="Input" Type="Int" />
+        <Parameter Name="Scale_Min_AI_0" Section="Input" Type="Real" />
+        <Parameter Name="Scale_Max_AI_0" Section="Input" Type="Real" />
+        <Parameter Name="Scale_Min_AI_1" Section="Input" Type="Real" />
+        <Parameter Name="Scale_Max_AI_1" Section="Input" Type="Real" />
+        <Parameter Name="Value_Real_AI_0" Section="Output" Type="Real" />
+        <Parameter Name="Value_Real_AI_1" Section="Output" Type="Real" />
+        <Parameter Name="Value_UInt_AI_0" Section="Output" Type="UInt" />
+        <Parameter Name="Value_UInt_AI_1" Section="Output" Type="UInt" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="37">
+      <Powerrail />
+      <NameCon UId="35" Name="en" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="35" Name="Analogic_Input_0" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="22" />
+      <NameCon UId="35" Name="Analogic_Input_1" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="23" />
+      <NameCon UId="35" Name="Min_NormX_AI_0" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="24" />
+      <NameCon UId="35" Name="Max_NormX_AI_0" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="25" />
+      <NameCon UId="35" Name="Min_NormX_AI_1" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="26" />
+      <NameCon UId="35" Name="Max_NormX_AI_1" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="27" />
+      <NameCon UId="35" Name="Scale_Min_AI_0" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="28" />
+      <NameCon UId="35" Name="Scale_Max_AI_0" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="29" />
+      <NameCon UId="35" Name="Scale_Min_AI_1" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="30" />
+      <NameCon UId="35" Name="Scale_Max_AI_1" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="35" Name="Value_Real_AI_0" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="35" Name="Value_Real_AI_1" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="35" Name="Value_UInt_AI_0" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="35" Name="Value_UInt_AI_1" />
+      <IdentCon UId="34" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Spin_Carousel_Frequency_Inverter_Speed_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Spin_Carousel_Frequency_Inverter_Speed_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Spin_Carousel_Frequency_Inverter_Speed_3" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Spin_Carousel_Frequency_Inverter_Speed_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Spin_Carousel_Frequency_Inverter_Speed_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Spin_Carousel_Frequency_Inverter_Speed_3" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Conveyor_Belt_Frequency_Inverter_Speed_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Conveyor_Belt_Frequency_Inverter_Speed_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Conveyor_Belt_Frequency_Inverter_Speed_3" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Turn_On_Conveyor_Belt_Motor_Spinner_Get_Entrace_Function_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Entrace_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Turn_On_Conveyor_Belt_Motor_Spinner_Get_Exit_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Exit_Funcional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Open_Air_Pressure" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Valve_Advance_Spinner_Entrace_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Valve_Advance_Spinner_Exit_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Signal_Pre_Functional_Test_Production_Line" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Digital_Output_14" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Digital_Output_15" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Digital_Output_16" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="41">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Digital_Output_17" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Digital_Output_18" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Digital_Output_19" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="44">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Digital_Output_20" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="45">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Digital_Output_21" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="46">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Digital_Output_22" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="47">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Digital_Output_23" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="48">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Voltage_220V_Selected" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="49">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Voltage_127V_Selected" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="50">
+      <Symbol>
+        <Component Name="Spin_Carousel_Frequency_Inverter_Speed_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="51">
+      <Symbol>
+        <Component Name="Spin_Carousel_Frequency_Inverter_Speed_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="52">
+      <Symbol>
+        <Component Name="Spin_Carousel_Frequency_Inverter_Speed_3" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="53">
+      <Symbol>
+        <Component Name="Conveyor_Belt_Frequency_Inverter_Speed_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="54">
+      <Symbol>
+        <Component Name="Conveyor_Belt_Frequency_Inverter_Speed_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="55">
+      <Symbol>
+        <Component Name="Conveyor_Belt_Frequency_Inverter_Speed_3" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="56">
+      <Symbol>
+        <Component Name="Turn_On_Conveyor_Belt_Motor_Spinner_Get_Entrace_Function_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="57">
+      <Symbol>
+        <Component Name="Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Entrace_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="58">
+      <Symbol>
+        <Component Name="Turn_On_Conveyor_Belt_Motor_Spinner_Get_Exit_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="59">
+      <Symbol>
+        <Component Name="Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Exit_Funcional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="60">
+      <Symbol>
+        <Component Name="Open_Air_Pressure" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="61">
+      <Symbol>
+        <Component Name="Valve_Advance_Spinner_Entrace_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="62">
+      <Symbol>
+        <Component Name="Valve_Advance_Spinner_Exit_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="63">
+      <Symbol>
+        <Component Name="Signal_Pre_Functional_Test_Production_Line" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="64">
+      <Symbol>
+        <Component Name="Digital_Output_14" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="65">
+      <Symbol>
+        <Component Name="Digital_Output_15" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="66">
+      <Symbol>
+        <Component Name="Digital_Output_16" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="67">
+      <Symbol>
+        <Component Name="Digital_Output_17" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="68">
+      <Symbol>
+        <Component Name="Digital_Output_18" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="69">
+      <Symbol>
+        <Component Name="Digital_Output_19" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="70">
+      <Symbol>
+        <Component Name="Digital_Output_20" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="71">
+      <Symbol>
+        <Component Name="Digital_Output_21" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="72">
+      <Symbol>
+        <Component Name="Digital_Output_22" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="73">
+      <Symbol>
+        <Component Name="Digital_Output_23" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="74">
+      <Symbol>
+        <Component Name="Voltage_220V_Selected" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="75">
+      <Symbol>
+        <Component Name="Voltage_127V_Selected" />
+      </Symbol>
+    </Access>
+    <Call UId="76">
+      <CallInfo Name="FB_Digital_Output" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="77">
+          <Component Name="Instance_FB_Digital_Output_DB" />
+        </Instance>
+        <Parameter Name="DB_In_Emergency_Stop_Release" Section="Input" Type="Bool" />
+        <Parameter Name="DB_In_Selected_Voltage_220V" Section="Input" Type="Bool" />
+        <Parameter Name="DB_In_Selected_Voltage_127V" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Spin_Carousel_Frequency_Inverter_Speed_1" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Spin_Carousel_Frequency_Inverter_Speed_2" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Spin_Carousel_Frequency_Inverter_Speed_3" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Conveyor_Belt_Frequency_Inverter_Speed_1" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Conveyor_Belt_Frequency_Inverter_Speed_2" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Conveyor_Belt_Frequency_Inverter_Speed_3" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Turn_On_Conveyor_Belt_Motor_Spinner_Get_Entrace_Function_Test" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Entrace_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Turn_On_Conveyor_Belt_Motor_Spinner_Get_Exit_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Exit_Funcional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Open_Air_Pressure" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Valve_Advance_Spinner_Get_Entrace_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Valve_Advance_Spinner_Get_Exit_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Signal_Pre_Functional_Test_Production_Line" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Digital_Output_14" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Digital_Output_15" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Digital_Output_16" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Digital_Output_17" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Digital_Output_18" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Digital_Output_19" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Digital_Output_20" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Digital_Output_21" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Digital_Output_22" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Digital_Output_23" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Voltage_220V_Selected" Section="Input" Type="Bool" />
+        <Parameter Name="DB_Voltage_127V_Selected" Section="Input" Type="Bool" />
+        <Parameter Name="DO_Spin_Carousel_Frequency_Inverter_Speed_1" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Spin_Carousel_Frequency_Inverter_Speed_2" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Spin_Carousel_Frequency_Inverter_Speed_3" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Conveyor_Belt_Frequency_Inverter_Speed_1" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Conveyor_Belt_Frequency_Inverter_Speed_2" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Conveyor_Belt_Frequency_Inverter_Speed_3" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Turn_On_Conveyor_Belt_Motor_Spinner_Get_Entrace_Function_Test" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Entrace_Functional_Test" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Turn_On_Conveyor_Belt_Motor_Spinner_Get_Exit_Functional_Test" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Exit_Funcional_Test" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Open_Air_Pressure" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Valve_Advance_Spinner_Entrace_Functional_Test" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Valve_Advance_Spinner_Exit_Functional_Test" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Signal_Pre_Functional_Test_Production_Line" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Digital_Output_14" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Digital_Output_15" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Digital_Output_16" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Digital_Output_17" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Digital_Output_18" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Digital_Output_19" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Digital_Output_20" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Digital_Output_21" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Digital_Output_22" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Digital_Output_23" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Voltage_220V_Selected" Section="Output" Type="Bool" />
+        <Parameter Name="DO_Voltage_127V_Selected" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="78">
+      <Powerrail />
+      <NameCon UId="76" Name="en" />
+    </Wire>
+    <Wire UId="79">
+      <IdentCon UId="21" />
+      <NameCon UId="76" Name="DB_In_Emergency_Stop_Release" />
+    </Wire>
+    <Wire UId="80">
+      <IdentCon UId="22" />
+      <NameCon UId="76" Name="DB_In_Selected_Voltage_220V" />
+    </Wire>
+    <Wire UId="81">
+      <IdentCon UId="23" />
+      <NameCon UId="76" Name="DB_In_Selected_Voltage_127V" />
+    </Wire>
+    <Wire UId="82">
+      <IdentCon UId="24" />
+      <NameCon UId="76" Name="DB_Spin_Carousel_Frequency_Inverter_Speed_1" />
+    </Wire>
+    <Wire UId="83">
+      <IdentCon UId="25" />
+      <NameCon UId="76" Name="DB_Spin_Carousel_Frequency_Inverter_Speed_2" />
+    </Wire>
+    <Wire UId="84">
+      <IdentCon UId="26" />
+      <NameCon UId="76" Name="DB_Spin_Carousel_Frequency_Inverter_Speed_3" />
+    </Wire>
+    <Wire UId="85">
+      <IdentCon UId="27" />
+      <NameCon UId="76" Name="DB_Conveyor_Belt_Frequency_Inverter_Speed_1" />
+    </Wire>
+    <Wire UId="86">
+      <IdentCon UId="28" />
+      <NameCon UId="76" Name="DB_Conveyor_Belt_Frequency_Inverter_Speed_2" />
+    </Wire>
+    <Wire UId="87">
+      <IdentCon UId="29" />
+      <NameCon UId="76" Name="DB_Conveyor_Belt_Frequency_Inverter_Speed_3" />
+    </Wire>
+    <Wire UId="88">
+      <IdentCon UId="30" />
+      <NameCon UId="76" Name="DB_Turn_On_Conveyor_Belt_Motor_Spinner_Get_Entrace_Function_Test" />
+    </Wire>
+    <Wire UId="89">
+      <IdentCon UId="31" />
+      <NameCon UId="76" Name="DB_Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Entrace_Functional_Test" />
+    </Wire>
+    <Wire UId="90">
+      <IdentCon UId="32" />
+      <NameCon UId="76" Name="DB_Turn_On_Conveyor_Belt_Motor_Spinner_Get_Exit_Functional_Test" />
+    </Wire>
+    <Wire UId="91">
+      <IdentCon UId="33" />
+      <NameCon UId="76" Name="DB_Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Exit_Funcional_Test" />
+    </Wire>
+    <Wire UId="92">
+      <IdentCon UId="34" />
+      <NameCon UId="76" Name="DB_Open_Air_Pressure" />
+    </Wire>
+    <Wire UId="93">
+      <IdentCon UId="35" />
+      <NameCon UId="76" Name="DB_Valve_Advance_Spinner_Get_Entrace_Functional_Test" />
+    </Wire>
+    <Wire UId="94">
+      <IdentCon UId="36" />
+      <NameCon UId="76" Name="DB_Valve_Advance_Spinner_Get_Exit_Functional_Test" />
+    </Wire>
+    <Wire UId="95">
+      <IdentCon UId="37" />
+      <NameCon UId="76" Name="DB_Signal_Pre_Functional_Test_Production_Line" />
+    </Wire>
+    <Wire UId="96">
+      <IdentCon UId="38" />
+      <NameCon UId="76" Name="DB_Digital_Output_14" />
+    </Wire>
+    <Wire UId="97">
+      <IdentCon UId="39" />
+      <NameCon UId="76" Name="DB_Digital_Output_15" />
+    </Wire>
+    <Wire UId="98">
+      <IdentCon UId="40" />
+      <NameCon UId="76" Name="DB_Digital_Output_16" />
+    </Wire>
+    <Wire UId="99">
+      <IdentCon UId="41" />
+      <NameCon UId="76" Name="DB_Digital_Output_17" />
+    </Wire>
+    <Wire UId="100">
+      <IdentCon UId="42" />
+      <NameCon UId="76" Name="DB_Digital_Output_18" />
+    </Wire>
+    <Wire UId="101">
+      <IdentCon UId="43" />
+      <NameCon UId="76" Name="DB_Digital_Output_19" />
+    </Wire>
+    <Wire UId="102">
+      <IdentCon UId="44" />
+      <NameCon UId="76" Name="DB_Digital_Output_20" />
+    </Wire>
+    <Wire UId="103">
+      <IdentCon UId="45" />
+      <NameCon UId="76" Name="DB_Digital_Output_21" />
+    </Wire>
+    <Wire UId="104">
+      <IdentCon UId="46" />
+      <NameCon UId="76" Name="DB_Digital_Output_22" />
+    </Wire>
+    <Wire UId="105">
+      <IdentCon UId="47" />
+      <NameCon UId="76" Name="DB_Digital_Output_23" />
+    </Wire>
+    <Wire UId="106">
+      <IdentCon UId="48" />
+      <NameCon UId="76" Name="DB_Voltage_220V_Selected" />
+    </Wire>
+    <Wire UId="107">
+      <IdentCon UId="49" />
+      <NameCon UId="76" Name="DB_Voltage_127V_Selected" />
+    </Wire>
+    <Wire UId="108">
+      <NameCon UId="76" Name="DO_Spin_Carousel_Frequency_Inverter_Speed_1" />
+      <IdentCon UId="50" />
+    </Wire>
+    <Wire UId="109">
+      <NameCon UId="76" Name="DO_Spin_Carousel_Frequency_Inverter_Speed_2" />
+      <IdentCon UId="51" />
+    </Wire>
+    <Wire UId="110">
+      <NameCon UId="76" Name="DO_Spin_Carousel_Frequency_Inverter_Speed_3" />
+      <IdentCon UId="52" />
+    </Wire>
+    <Wire UId="111">
+      <NameCon UId="76" Name="DO_Conveyor_Belt_Frequency_Inverter_Speed_1" />
+      <IdentCon UId="53" />
+    </Wire>
+    <Wire UId="112">
+      <NameCon UId="76" Name="DO_Conveyor_Belt_Frequency_Inverter_Speed_2" />
+      <IdentCon UId="54" />
+    </Wire>
+    <Wire UId="113">
+      <NameCon UId="76" Name="DO_Conveyor_Belt_Frequency_Inverter_Speed_3" />
+      <IdentCon UId="55" />
+    </Wire>
+    <Wire UId="114">
+      <NameCon UId="76" Name="DO_Turn_On_Conveyor_Belt_Motor_Spinner_Get_Entrace_Function_Test" />
+      <IdentCon UId="56" />
+    </Wire>
+    <Wire UId="115">
+      <NameCon UId="76" Name="DO_Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Entrace_Functional_Test" />
+      <IdentCon UId="57" />
+    </Wire>
+    <Wire UId="116">
+      <NameCon UId="76" Name="DO_Turn_On_Conveyor_Belt_Motor_Spinner_Get_Exit_Functional_Test" />
+      <IdentCon UId="58" />
+    </Wire>
+    <Wire UId="117">
+      <NameCon UId="76" Name="DO_Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Exit_Funcional_Test" />
+      <IdentCon UId="59" />
+    </Wire>
+    <Wire UId="118">
+      <NameCon UId="76" Name="DO_Open_Air_Pressure" />
+      <IdentCon UId="60" />
+    </Wire>
+    <Wire UId="119">
+      <NameCon UId="76" Name="DO_Valve_Advance_Spinner_Entrace_Functional_Test" />
+      <IdentCon UId="61" />
+    </Wire>
+    <Wire UId="120">
+      <NameCon UId="76" Name="DO_Valve_Advance_Spinner_Exit_Functional_Test" />
+      <IdentCon UId="62" />
+    </Wire>
+    <Wire UId="121">
+      <NameCon UId="76" Name="DO_Signal_Pre_Functional_Test_Production_Line" />
+      <IdentCon UId="63" />
+    </Wire>
+    <Wire UId="122">
+      <NameCon UId="76" Name="DO_Digital_Output_14" />
+      <IdentCon UId="64" />
+    </Wire>
+    <Wire UId="123">
+      <NameCon UId="76" Name="DO_Digital_Output_15" />
+      <IdentCon UId="65" />
+    </Wire>
+    <Wire UId="124">
+      <NameCon UId="76" Name="DO_Digital_Output_16" />
+      <IdentCon UId="66" />
+    </Wire>
+    <Wire UId="125">
+      <NameCon UId="76" Name="DO_Digital_Output_17" />
+      <IdentCon UId="67" />
+    </Wire>
+    <Wire UId="126">
+      <NameCon UId="76" Name="DO_Digital_Output_18" />
+      <IdentCon UId="68" />
+    </Wire>
+    <Wire UId="127">
+      <NameCon UId="76" Name="DO_Digital_Output_19" />
+      <IdentCon UId="69" />
+    </Wire>
+    <Wire UId="128">
+      <NameCon UId="76" Name="DO_Digital_Output_20" />
+      <IdentCon UId="70" />
+    </Wire>
+    <Wire UId="129">
+      <NameCon UId="76" Name="DO_Digital_Output_21" />
+      <IdentCon UId="71" />
+    </Wire>
+    <Wire UId="130">
+      <NameCon UId="76" Name="DO_Digital_Output_22" />
+      <IdentCon UId="72" />
+    </Wire>
+    <Wire UId="131">
+      <NameCon UId="76" Name="DO_Digital_Output_23" />
+      <IdentCon UId="73" />
+    </Wire>
+    <Wire UId="132">
+      <NameCon UId="76" Name="DO_Voltage_220V_Selected" />
+      <IdentCon UId="74" />
+    </Wire>
+    <Wire UId="133">
+      <NameCon UId="76" Name="DO_Voltage_127V_Selected" />
+      <IdentCon UId="75" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Clock_1Hz" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Emergency_Stop_Release" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Exit_Functional_Test_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Exit_Functional_Test_After_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_28" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_29" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Spinner_Entrace_Functional_Test_Position_Withdrawn" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Spinner_Entrace_Functional_Test_Position_Advanced" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="In" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Start" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Manual_Turn_On_Motor_Caroussel" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Manual_Turn_On_Motor_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Water_Foutain_Fail_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Select_Motor_Speed" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Carousel_Voltage_Selection" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="Out" />
+      </Symbol>
+    </Access>
+    <Call UId="37">
+      <CallInfo Name="FB_IO_Device" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="38">
+          <Component Name="Instance_FB_IO_Device_DB" />
+        </Instance>
+        <Parameter Name="Life_Trigger" Section="Input" Type="Bool" />
+        <Parameter Name="Emergency_Stop_Release" Section="Input" Type="Bool" />
+        <Parameter Name="Trigger_Read_Serial_Number_Entrace_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="Trigger_Read_Serial_Number_Exit_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="Selected_Voltage_220V" Section="Input" Type="Bool" />
+        <Parameter Name="Selected_Voltage_127V" Section="Input" Type="Bool" />
+        <Parameter Name="Carousel_Frequency_Inverter_Fail" Section="Input" Type="Bool" />
+        <Parameter Name="Conveyor_Belt_Functional_Test_Inverter_Fail" Section="Input" Type="Bool" />
+        <Parameter Name="In" Section="Input" Type="&quot;IO_Device_Inputs&quot;" />
+        <Parameter Name="Start" Section="Output" Type="Bool" />
+        <Parameter Name="Manual_Turn_On_Motor_Caroussel" Section="Output" Type="Bool" />
+        <Parameter Name="Manual_Turn_On_Motor_Conveyor_Belt" Section="Output" Type="Bool" />
+        <Parameter Name="Water_Foutain_Fail_Functional_Test" Section="Output" Type="Bool" />
+        <Parameter Name="Select_Motor_Speed" Section="Output" Type="SInt" />
+        <Parameter Name="Carousel_Voltage_Selection" Section="Output" Type="SInt" />
+        <Parameter Name="Out" Section="Output" Type="&quot;IO_Device_Outputs&quot;" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="37" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="37" Name="Life_Trigger" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="37" Name="Emergency_Stop_Release" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="37" Name="Trigger_Read_Serial_Number_Entrace_Functional_Test" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="37" Name="Trigger_Read_Serial_Number_Exit_Functional_Test" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="37" Name="Selected_Voltage_220V" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="26" />
+      <NameCon UId="37" Name="Selected_Voltage_127V" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="27" />
+      <NameCon UId="37" Name="Carousel_Frequency_Inverter_Fail" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="28" />
+      <NameCon UId="37" Name="Conveyor_Belt_Functional_Test_Inverter_Fail" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="29" />
+      <NameCon UId="37" Name="In" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="37" Name="Start" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="37" Name="Manual_Turn_On_Motor_Caroussel" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="37" Name="Manual_Turn_On_Motor_Conveyor_Belt" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="37" Name="Water_Foutain_Fail_Functional_Test" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="37" Name="Select_Motor_Speed" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="37" Name="Carousel_Voltage_Selection" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="37" Name="Out" />
+      <IdentCon UId="36" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Emergency_Stop_Release" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Start" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Before_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Entrace_Functional_Test_After_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Trigger_Read_Serial_Number_Entrace_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Geting_Exit_Rework_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Button_Water_Fountain_Get_Exit_Rework_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Trigger_Read_Serial_Number_Exit_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Exit_Functional_Test_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Turn_On_Conveyor_Belt_Motor_Spinner_Get_Entrace_Function_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Valve_Advance_Spinner_Entrace_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Signal_Pre_Functional_Test_Production_Line" />
+      </Symbol>
+    </Access>
+    <Call UId="34">
+      <CallInfo Name="FB_Recive_Water_Fountain_From_Rework" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="35">
+          <Component Name="Instance_FB_Recive_Water_Fountain_From_Rework_DB" />
+        </Instance>
+        <Parameter Name="Emergency_Stop_Release" Section="Input" Type="Bool" />
+        <Parameter Name="Start" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Water_Fountain_Before_Entrace_Functional_Test_Spinner_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Water_Fountain_Entrace_Functional_Test_Spinner_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Spinner_Entrace_Functional_Test_Position_Withdrawn" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Spinner_Entrace_Functional_Test_Position_Advanced" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Water_Fountain_Entrace_Functional_Test_After_Spinner_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Water_Fountain_Geting_Exit_Rework_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="Button_Water_Fountain_Get_Exit_Rework_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="Trigger_Read_Serial_Number_Entrace_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="Turn_On_Conveyor_Belt_Motor_Spinner_Get_Entrace_Function_Test" Section="Output" Type="Bool" />
+        <Parameter Name="Valve_Advance_Spinner_Entrace_Functional_Test" Section="Output" Type="Bool" />
+        <Parameter Name="Signal_Pre_Functional_Test_Production_Line" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="36">
+      <Powerrail />
+      <NameCon UId="34" Name="en" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="21" />
+      <NameCon UId="34" Name="Emergency_Stop_Release" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="22" />
+      <NameCon UId="34" Name="Start" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="23" />
+      <NameCon UId="34" Name="Sensor_Water_Fountain_Before_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="24" />
+      <NameCon UId="34" Name="Sensor_Water_Fountain_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="25" />
+      <NameCon UId="34" Name="Sensor_Spinner_Entrace_Functional_Test_Position_Withdrawn" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="26" />
+      <NameCon UId="34" Name="Sensor_Spinner_Entrace_Functional_Test_Position_Advanced" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="27" />
+      <NameCon UId="34" Name="Sensor_Water_Fountain_Entrace_Functional_Test_After_Spinner_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="28" />
+      <NameCon UId="34" Name="Sensor_Water_Fountain_Geting_Exit_Rework_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="29" />
+      <NameCon UId="34" Name="Button_Water_Fountain_Get_Exit_Rework_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="30" />
+      <NameCon UId="34" Name="Trigger_Read_Serial_Number_Entrace_Functional_Test" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="34" Name="Turn_On_Conveyor_Belt_Motor_Spinner_Get_Entrace_Function_Test" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="34" Name="Valve_Advance_Spinner_Entrace_Functional_Test" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="34" Name="Signal_Pre_Functional_Test_Production_Line" />
+      <IdentCon UId="33" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Emergency_Stop_Release" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Start" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Manual_Turn_On_Motor_Caroussel" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_Contron_Coveyor_Belt" />
+        <Component Name="Pause_Conveyor_Belt_And_Carousel_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Select_Motor_Speed" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Spin_Carousel_Frequency_Inverter_Speed_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Spin_Carousel_Frequency_Inverter_Speed_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Spin_Carousel_Frequency_Inverter_Speed_3" />
+      </Symbol>
+    </Access>
+    <Call UId="29">
+      <CallInfo Name="FB_Frequency_Inverter" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="30">
+          <Component Name="Instance_FB_Frequency_Inverter_DB_Spin_Caroussel" />
+        </Instance>
+        <Parameter Name="Emergency_Stop_Release" Section="Input" Type="Bool" />
+        <Parameter Name="Start" Section="Input" Type="Bool" />
+        <Parameter Name="Manual_Turn_On_Motor" Section="Input" Type="Bool" />
+        <Parameter Name="Pause_Conveyor_Belt_And_Carousel_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="Select_Motor_Speedy" Section="Input" Type="SInt" />
+        <Parameter Name="Motor_Spining_Speedy_1" Section="Output" Type="Bool" />
+        <Parameter Name="Motor_Spining_Speedy_2" Section="Output" Type="Bool" />
+        <Parameter Name="Motor_Spining_Speedy_3" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <Powerrail />
+      <NameCon UId="29" Name="en" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="21" />
+      <NameCon UId="29" Name="Emergency_Stop_Release" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="22" />
+      <NameCon UId="29" Name="Start" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="23" />
+      <NameCon UId="29" Name="Manual_Turn_On_Motor" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="24" />
+      <NameCon UId="29" Name="Pause_Conveyor_Belt_And_Carousel_Functional_Test" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="25" />
+      <NameCon UId="29" Name="Select_Motor_Speedy" />
+    </Wire>
+    <Wire UId="37">
+      <NameCon UId="29" Name="Motor_Spining_Speedy_1" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="29" Name="Motor_Spining_Speedy_2" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="29" Name="Motor_Spining_Speedy_3" />
+      <IdentCon UId="28" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="21" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Emergency_Stop_Release" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Start" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Manual_Turn_On_Motor_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_Contron_Coveyor_Belt" />
+        <Component Name="Pause_Conveyor_Belt_And_Carousel_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Select_Motor_Speed" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Conveyor_Belt_Frequency_Inverter_Speed_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Conveyor_Belt_Frequency_Inverter_Speed_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Conveyor_Belt_Frequency_Inverter_Speed_3" />
+      </Symbol>
+    </Access>
+    <Call UId="29">
+      <CallInfo Name="FB_Frequency_Inverter" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="30">
+          <Component Name="Instance_FB_Frequency_Inverter_DB_Conveyor_Belt" />
+        </Instance>
+        <Parameter Name="Emergency_Stop_Release" Section="Input" Type="Bool" />
+        <Parameter Name="Start" Section="Input" Type="Bool" />
+        <Parameter Name="Manual_Turn_On_Motor" Section="Input" Type="Bool" />
+        <Parameter Name="Pause_Conveyor_Belt_And_Carousel_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="Select_Motor_Speedy" Section="Input" Type="SInt" />
+        <Parameter Name="Motor_Spining_Speedy_1" Section="Output" Type="Bool" />
+        <Parameter Name="Motor_Spining_Speedy_2" Section="Output" Type="Bool" />
+        <Parameter Name="Motor_Spining_Speedy_3" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <Powerrail />
+      <NameCon UId="29" Name="en" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="21" />
+      <NameCon UId="29" Name="Emergency_Stop_Release" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="22" />
+      <NameCon UId="29" Name="Start" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="23" />
+      <NameCon UId="29" Name="Manual_Turn_On_Motor" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="24" />
+      <NameCon UId="29" Name="Pause_Conveyor_Belt_And_Carousel_Functional_Test" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="25" />
+      <NameCon UId="29" Name="Select_Motor_Speedy" />
+    </Wire>
+    <Wire UId="37">
+      <NameCon UId="29" Name="Motor_Spining_Speedy_1" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="29" Name="Motor_Spining_Speedy_2" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="29" Name="Motor_Spining_Speedy_3" />
+      <IdentCon UId="28" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="22" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="26" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Emergency_Stop_Release" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Start" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Water_Foutain_Fail_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Exit_Functional_Test_After_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Start" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Finish" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Carousel_Frequency_Inverter_Fail" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Conveyor_Belt_Functional_Test_Inverter_Fail" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Selected_Voltage_220V" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Turn_On_Conveyor_Belt_Motor_Spinner_Get_Exit_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Valve_Advance_Spinner_Exit_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="DB_Contron_Coveyor_Belt" />
+        <Component Name="Pause_Conveyor_Belt_And_Carousel_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Call UId="33">
+      <CallInfo Name="FB_Send_Water_Fountain_To_Rework" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="34">
+          <Component Name="Instance_FB_Send_Water_Fountain_To_Rework_DB" />
+        </Instance>
+        <Parameter Name="Emergency_Stop_Release" Section="Input" Type="Bool" />
+        <Parameter Name="Start" Section="Input" Type="Bool" />
+        <Parameter Name="Water_Fountain_Fail_Test" Section="Input" Type="Bool" />
+        <Parameter Name="Trigger_Read_Serial_Number_Exit_Functional_Test" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Water_Fountain_Exit_Functional_Test_Spinner_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Spinner_Exit_Functional_Test_Position_Withdrawn" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Spinner_Exit_Functional_Test_Position_Advanced" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Water_Fountain_Exit_Functional_Test_After_Spinner_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Start" Section="Input" Type="Bool" />
+        <Parameter Name="Turn_On_Conveyor_Belt_Motor_Spinner_Get_Exit_Functional_Test" Section="Output" Type="Bool" />
+        <Parameter Name="Valve_Advance_Spinner_Get_Exit_Functional_Test" Section="Output" Type="Bool" />
+        <Parameter Name="Pause_Conveyor_Belt_And_Carousel_Functional_Test" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="35">
+      <Powerrail />
+      <NameCon UId="33" Name="en" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="21" />
+      <NameCon UId="33" Name="Emergency_Stop_Release" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="22" />
+      <NameCon UId="33" Name="Start" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="23" />
+      <NameCon UId="33" Name="Water_Fountain_Fail_Test" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="24" />
+      <NameCon UId="33" Name="Trigger_Read_Serial_Number_Exit_Functional_Test" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="25" />
+      <NameCon UId="33" Name="Sensor_Water_Fountain_Exit_Functional_Test_Spinner_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="Sensor_Spinner_Exit_Functional_Test_Position_Withdrawn" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="27" />
+      <NameCon UId="33" Name="Sensor_Spinner_Exit_Functional_Test_Position_Advanced" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="28" />
+      <NameCon UId="33" Name="Sensor_Water_Fountain_Exit_Functional_Test_After_Spinner_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="29" />
+      <NameCon UId="33" Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Start" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="33" Name="Turn_On_Conveyor_Belt_Motor_Spinner_Get_Exit_Functional_Test" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="33" Name="Valve_Advance_Spinner_Get_Exit_Functional_Test" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="33" Name="Pause_Conveyor_Belt_And_Carousel_Functional_Test" />
+      <IdentCon UId="32" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="27" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="29" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Emergency_Stop_Release" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Button_Water_Fountain_Get_Exit_Rework_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Trigger_Read_Serial_Number_Exit_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Trigger_Read_Serial_Number_Entrace_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Entrace_Functional_Test" />
+      </Symbol>
+    </Access>
+    <Call UId="27">
+      <CallInfo Name="FB_Get_Out_Rework_Conveyor_Belt" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="28">
+          <Component Name="Instance_FB_Get_Out_Rework_Conveyor_Belt_DB" />
+        </Instance>
+        <Parameter Name="Emergency_Stop_Release" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Water_Fountain_Geting_Exit_Rework_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="Button_Water_Fountain_Get_Exit_Rework_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Spinner_Entrace_Functional_Test_Position_Advanced" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Water_Fountain_Entrace_Functional_Test_Spinner_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Entrace_Functional_Test" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="29">
+      <Powerrail />
+      <NameCon UId="27" Name="en" />
+    </Wire>
+    <Wire UId="30">
+      <IdentCon UId="21" />
+      <NameCon UId="27" Name="Emergency_Stop_Release" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="22" />
+      <NameCon UId="27" Name="Sensor_Water_Fountain_Geting_Exit_Rework_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="23" />
+      <NameCon UId="27" Name="Button_Water_Fountain_Get_Exit_Rework_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="24" />
+      <NameCon UId="27" Name="Sensor_Spinner_Entrace_Functional_Test_Position_Advanced" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="25" />
+      <NameCon UId="27" Name="Sensor_Water_Fountain_Entrace_Functional_Test_Spinner_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="35">
+      <NameCon UId="27" Name="Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Entrace_Functional_Test" />
+      <IdentCon UId="26" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="30" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Emergency_Stop_Release" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Start" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Start" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Finish" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Carousel_Frequency_Inverter_Fail" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Selected_Voltage_220V" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Selected_Voltage_127V" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Exit_Funcional_Test" />
+      </Symbol>
+    </Access>
+    <Call UId="29">
+      <CallInfo Name="FB_Get_In_Rework_Conveyor_Belt" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="30">
+          <Component Name="Instance_FB_Get_In_Rework_Conveyor_Belt_DB" />
+        </Instance>
+        <Parameter Name="Emergency_Stop_Release" Section="Input" Type="Bool" />
+        <Parameter Name="Start" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Water_Fountain_Exit_Functional_Test_Spinner_Conveyor_Belt" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Spinner_Exit_Functional_Test_Position_Withdrawn" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Spinner_Exit_Functional_Test_Position_Advanced" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Start" Section="Input" Type="Bool" />
+        <Parameter Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Finish" Section="Input" Type="Bool" />
+        <Parameter Name="Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Exit_Funcional_Test" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <Powerrail />
+      <NameCon UId="29" Name="en" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="21" />
+      <NameCon UId="29" Name="Emergency_Stop_Release" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="22" />
+      <NameCon UId="29" Name="Start" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="23" />
+      <NameCon UId="29" Name="Sensor_Water_Fountain_Exit_Functional_Test_Spinner_Conveyor_Belt" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="24" />
+      <NameCon UId="29" Name="Sensor_Spinner_Exit_Functional_Test_Position_Withdrawn" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="25" />
+      <NameCon UId="29" Name="Sensor_Spinner_Exit_Functional_Test_Position_Advanced" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="26" />
+      <NameCon UId="29" Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Start" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="27" />
+      <NameCon UId="29" Name="Sensor_Water_Fountain_Geting_Entrace_Rework_Conveyor_Belt_Finish" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="29" Name="Turn_On_Conveyor_Belt_Motor_Rework_Conveyor_Belt_Get_Exit_Funcional_Test" />
+      <IdentCon UId="28" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="31" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="32" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="33" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="35" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Emergency_Stop_Release" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_28" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_Digital_Input" />
+        <Component Name="Digital_Input_29" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_Info_From_PCL_Centralizer" />
+        <Component Name="Carousel_Voltage_Selection" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Voltage_220V_Selected" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_Digital_Output" />
+        <Component Name="Voltage_127V_Selected" />
+      </Symbol>
+    </Access>
+    <Call UId="27">
+      <CallInfo Name="FB_Caroussel_Voltage_Selection" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="28">
+          <Component Name="Instance_FB_Caroussel_Voltage_Selection_DB" />
+        </Instance>
+        <Parameter Name="Emergency_Stop_Release" Section="Input" Type="Bool" />
+        <Parameter Name="Selected_Voltage_220V" Section="Input" Type="Bool" />
+        <Parameter Name="Selected_Voltage_127V" Section="Input" Type="Bool" />
+        <Parameter Name="Carousel_Voltage_Selection" Section="Input" Type="SInt" />
+        <Parameter Name="Voltage_220V_Selected" Section="Output" Type="Bool" />
+        <Parameter Name="Voltage_127V_Selected" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="29">
+      <Powerrail />
+      <NameCon UId="27" Name="en" />
+    </Wire>
+    <Wire UId="30">
+      <IdentCon UId="21" />
+      <NameCon UId="27" Name="Emergency_Stop_Release" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="22" />
+      <NameCon UId="27" Name="Selected_Voltage_220V" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="23" />
+      <NameCon UId="27" Name="Selected_Voltage_127V" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="24" />
+      <NameCon UId="27" Name="Carousel_Voltage_Selection" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="27" Name="Voltage_220V_Selected" />
+      <IdentCon UId="25" />
+    </Wire>
+    <Wire UId="35">
+      <NameCon UId="27" Name="Voltage_127V_Selected" />
+      <IdentCon UId="26" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="36" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="37" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="38" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="39" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3A" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="3D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="3E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="3F" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="40" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>"Main Program Sweep (Cycle)"</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.OB>
+</Document>

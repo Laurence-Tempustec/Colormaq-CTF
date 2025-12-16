@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="Job_Mailbox" Datatype="Array[0..3] of Word" />
+    <Member Name="Control_Screen" Datatype="Word">
+      <StartValue>1</StartValue>
+    </Member>
+    <Member Name="Alarm" Datatype="Bool" />
+    <Member Name="Start" Datatype="Bool" />
+    <Member Name="Change_Employee" Datatype="Bool" />
+    <Member Name="Send_Recipe" Datatype="Bool" />
+    <Member Name="Manual_Turn_On_Motor_Caroussel" Datatype="Bool" />
+    <Member Name="Manual_Turn_On_Motor_Conveyor_Belt" Datatype="Bool" />
+    <Member Name="Select_Test_Panel" Datatype="SInt" />
+    <Member Name="Select_Motor_Speed" Datatype="SInt">
+      <StartValue>1</StartValue>
+    </Member>
+    <Member Name="Employee_Rework" Datatype="String[6]" />
+    <Member Name="Employee_Station_1" Datatype="String[6]" />
+    <Member Name="Employee_Station_2" Datatype="String[6]" />
+    <Member Name="Admin_1" Datatype="String[6]" Remanence="Retain" />
+    <Member Name="Admin_2" Datatype="String[6]" Remanence="Retain" />
+    <Member Name="Admin_3" Datatype="String[6]" Remanence="Retain" />
+    <Member Name="Admin_4" Datatype="String[6]" Remanence="Retain" />
+    <Member Name="Admin_5" Datatype="String[6]" Remanence="Retain" />
+    <Member Name="Serial_Number" Datatype="String[17]" />
+    <Member Name="Electrical_Current" Datatype="UInt" />
+    <Member Name="Electrical_Voltage" Datatype="UInt" />
+    <Member Name="Electrical_Current_Result" Datatype="String[10]" />
+    <Member Name="Visual_Test_Result" Datatype="String[10]" />
+    <Member Name="Functional_Test_Result" Datatype="String[10]" />
+    <Member Name="Rework_Serial_Number" Datatype="String[17]" />
+    <Member Name="Rework_Electrical_Current" Datatype="UInt" />
+    <Member Name="Rework_Electrical_Voltage" Datatype="UInt" />
+    <Member Name="Rework_Electrical_Current_Result" Datatype="String[10]" />
+    <Member Name="Rework_Visual_Test_Result" Datatype="String[10]" />
+    <Member Name="Rework_Functional_Test_Result" Datatype="String[10]" />
+    <Member Name="Alarm_0" Datatype="Word" />
+    <Member Name="Alarm_1" Datatype="Word" />
+    <Member Name="Alarm_2" Datatype="Word" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DB_HMI</Name>
+      <Namespace />
+      <Number>4</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>
